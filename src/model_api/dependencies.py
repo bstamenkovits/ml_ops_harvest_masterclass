@@ -1,6 +1,13 @@
 from model_api.dataloaders import DataLoader
+from model_api.predictors import TensorflowPredictor
 
-data_loader = DataLoader()
+
+predictor = TensorflowPredictor(model_path="./model/index")
+data_loader = DataLoader(predictor_model=predictor)
+
+
+async def get_predictor() -> TensorflowPredictor:
+    return predictor
 
 
 async def get_data() -> DataLoader:

@@ -3,7 +3,7 @@ import logging
 
 from fastapi import FastAPI
 
-from model_api.routers import basic_router
+from model_api.routers import user_data_router
 
 if not os.path.isdir("logs"):
     os.mkdir("logs")
@@ -17,7 +17,7 @@ logger = logging.getLogger()
 
 app = FastAPI()
 
-app.include_router(basic_router.router)
+app.include_router(user_data_router.router)
 
 
 @app.get("/")

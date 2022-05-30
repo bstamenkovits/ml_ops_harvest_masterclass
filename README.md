@@ -8,5 +8,5 @@ pip install .
 # Run
 
 ```commandline
-uvicorn model_api.main:app
+uvicorn model_api.main:app --reload
 ```
