@@ -2,7 +2,7 @@
 
 ```commandline
 pip install -r requirements.txt
-pip install .
+pip install -e .
 ```
 
 # Run
