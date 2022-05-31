@@ -2,7 +2,7 @@ from pydantic import BaseModel
 
 
 class ViewResponseModel(BaseModel):
-    user: int
+    user: str
     movie: str
 
     class Config:
