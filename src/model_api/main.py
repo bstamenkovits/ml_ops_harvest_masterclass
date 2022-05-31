@@ -22,8 +22,4 @@ app.include_router(user_data_router.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the simple API."}
-
-
-def restart_api():
-    os.system('sh start_api.sh')
+    return {"message": "Welcome to this simple API."}
