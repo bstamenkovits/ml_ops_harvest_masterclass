@@ -1,1 +1,1 @@
-from .view import ViewResponseModel
+from .user import UserResponseModel
