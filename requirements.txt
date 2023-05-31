@@ -3,5 +3,12 @@ numpy
 pydantic
 pandas
 fastapi
+gunicorn
 uvicorn
 tensorflow
+tensorflow-datasets
+jinja2
+jwt
+passlib[Bcrypt]
+python-jose
+python-multipart
